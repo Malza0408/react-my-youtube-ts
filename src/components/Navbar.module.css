@@ -1,0 +1,85 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--color-grey);
+  padding: 0.2rem 0.4rem 0.3rem 0.4rem;
+  border-bottom: 1px solid var(--color-light-grey);
+}
+
+.logo {
+  margin: 0.6rem 0.8rem;
+  display: flex;
+  align-items: center;
+}
+
+.logo:hover {
+  cursor: pointer;
+}
+
+.font_youtube {
+  font-size: 2rem;
+}
+
+.title {
+  font-size: 1.7rem;
+  color: var(--color-white);
+}
+
+.searchForm {
+  display: flex;
+  align-items: center;
+  width: 42%;
+  height: 2.5rem;
+  max-width: 750px;
+}
+
+.searchInput {
+  width: 100%;
+  height: 100%;
+  font-size: 1rem;
+  padding: 0 0.3rem;
+  background-color: var(--color-light-black);
+  color: var(--color-white);
+  border: solid 1px var(--color-light-grey);
+  outline: none;
+}
+
+.searchInput:focus {
+  border: solid 1px var(--color-skyblue);
+}
+
+.inputBtn {
+  width: 4rem;
+  height: 100%;
+  background-color: var(--color-light-grey);
+}
+
+.font_search {
+  font-size: 1.4rem;
+}
+
+.logIn {
+  border: solid 1px var(--color-skyblue);
+  padding: 0.6rem;
+  margin: 0 1.5rem;
+  color: var(--color-skyblue);
+  width: 100px;
+  transition: all 7ms ease;
+}
+
+.logIn:hover {
+  cursor: pointer;
+  background-color: var(--color-skyblue);
+}
+
+.font_login {
+  font-size: 120%;
+  margin-right: 0.4rem;
+}
+
+@media (max-width: 640px) {
+  .logIn {
+    margin: 0;
+  }
+}

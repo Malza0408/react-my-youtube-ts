@@ -1,25 +1,28 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
+import Home from "./pages/Home";
+import Play from "./pages/Play";
+import SearchResult from "./pages/SearchResult";
+import NotFound from "./pages/NotFound";
+import Error from "./pages/Error";
+import { ErrorBoundary } from "react-error-boundary";
+import { ConnectedRouter } from "connected-react-router";
+import history from "./history";
+import NavbarContainer from "./containers/NavbarContainer";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ErrorBoundary FallbackComponent={Error}>
+      <NavbarContainer />
+      <ConnectedRouter history={history}>
+        <Switch>
+          <Route exact path="/" component={Home} />
+          <Route exact path="/play" component={Play} />
+          <Route exact path="/searchResult" component={SearchResult} />
+          <Route component={NotFound} />
+        </Switch>
+      </ConnectedRouter>
+    </ErrorBoundary>
   );
 }
 

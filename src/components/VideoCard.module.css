@@ -1,0 +1,63 @@
+.home {
+  margin: 0;
+}
+
+.home .metaData {
+  width: 100%;
+}
+
+.searchResult {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.searchResult .thumbSizeMedium {
+  max-width: 320px;
+  max-height: 180px;
+  margin-right: 1rem;
+  flex-shrink: 0;
+}
+
+.searchResult .metaData {
+  width: 100%;
+  min-width: 35%;
+  height: 100%;
+}
+
+.playVideo {
+  display: flex;
+  align-items: flex-start;
+}
+
+.playVideo .metaData {
+  width: 100%;
+}
+
+.thumbSizeSmall {
+  width: 168px;
+  height: 94px;
+  margin-right: 0.4rem;
+}
+
+img {
+  cursor: pointer;
+  width: 100%;
+}
+
+.home:hover img,
+.searchResult:hover img,
+.playVideo:hover img {
+  opacity: 0.7;
+}
+
+.metaData:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 720px) {
+  .searchResult .thumbSizeMedium {
+    width: calc(100% * 0.5);
+    height: calc((100% * 0.5) * 9 / 16);
+  }
+}

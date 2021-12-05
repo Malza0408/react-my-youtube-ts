@@ -1,0 +1,21 @@
+.searchResult {
+  background-color: var(--color-dark-grey);
+  margin-top: 2rem;
+}
+
+.container {
+  width: 65rem;
+  margin: auto;
+}
+
+.videoList {
+  display: flex;
+  flex-direction: column;
+  margin: 0 1.5rem 0 1.5rem;
+}
+
+@media (max-width: 65rem) {
+  .container {
+    width: 100%;
+  }
+}
