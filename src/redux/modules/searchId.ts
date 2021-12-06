@@ -38,7 +38,11 @@ const reducer = handleActions<DataState, DataType[]>(
 );
 
 export default reducer;
-export const { getVideos } = createActions("GET_VIDEOS", { prefix });
+export const { getVideos, setVideos } = createActions(
+  "GET_VIDEOS",
+  "SET_VIDEOS",
+  { prefix }
+);
 
 function* getVideosSaga(query: Action<string>) {
   try {
@@ -57,8 +61,22 @@ function* getVideosSaga(query: Action<string>) {
   }
 }
 
+function* setVideosdefault() {
+  try {
+    const videos: DataType[] = yield call(
+      YoutubeService.mostPopular,
+      MAX_RESULT
+    );
+    yield put(success(videos));
+    yield put(push("/"));
+  } catch (error: any) {
+    yield put(fail(new Error(error?.response?.data?.error || "UNKNOWN_ERROR")));
+  }
+}
+
 // saga
 
 export function* videosDataSaga() {
   yield takeLatest(`${prefix}/GET_VIDEOS`, getVideosSaga);
+  yield takeLatest(`${prefix}/SET_VIDEOS`, setVideosdefault);
 }

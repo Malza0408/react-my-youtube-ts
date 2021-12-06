@@ -1,4 +1,4 @@
-import React, { MouseEvent, useEffect } from "react";
+import React, { MouseEvent } from "react";
 import styles from "./Play.module.css";
 import { generateKey } from "../functions/functionBundle";
 import * as functions from "../functions/functionBundle";

@@ -33,7 +33,7 @@ export const { get } = createActions("GET", { prefix });
 function* getVideoSaga(video: Action<DataType>) {
   try {
     yield put(success(video.payload));
-    yield delay(500);
+    yield delay(600);
     yield put(push("/play"));
   } catch (error: any) {
     yield put(fail(new Error(error?.response?.data?.error || "UNKNOWN_ERROR")));

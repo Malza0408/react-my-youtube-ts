@@ -1,4 +1,4 @@
-import React, { MouseEvent, useCallback, useState } from "react";
+import { MouseEvent, useCallback, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import Play from "../components/Play";
 import { get } from "../redux/modules/selectVideo";
@@ -31,11 +31,9 @@ const PlayContainer = () => {
   const dispatch = useDispatch();
   const selectVideo = useCallback(
     (video) => {
-      setTimeout(() => {
-        dispatch(get(video));
-        setToggle(true);
-        setToggleName("더보기");
-      }, 500);
+      dispatch(get(video));
+      setToggle(true);
+      setToggleName("더보기");
     },
     [dispatch]
   );

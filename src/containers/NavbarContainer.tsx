@@ -1,8 +1,7 @@
-import React, { useCallback } from "react";
+import { useCallback } from "react";
 import { useDispatch } from "react-redux";
 import Navbar from "../components/Navbar";
-import history from "../history";
-import { getVideos } from "../redux/modules/searchId";
+import { getVideos, setVideos } from "../redux/modules/searchId";
 
 const NavbarContainer = () => {
   const dispatch = useDispatch();
@@ -15,8 +14,8 @@ const NavbarContainer = () => {
   );
 
   const goHome = useCallback(() => {
-    history.push("/");
-  }, []);
+    dispatch(setVideos());
+  }, [dispatch]);
 
   return <Navbar handleSubmit={searchVideos} goHome={goHome} />;
 };

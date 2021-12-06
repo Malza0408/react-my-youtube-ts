@@ -65,11 +65,12 @@
   margin: 0 1.5rem;
   color: var(--color-skyblue);
   width: 100px;
-  transition: all 7ms ease;
+  transition: all 700ms ease;
 }
 
 .logIn:hover {
   cursor: pointer;
+  border-radius: 1rem;
   background-color: var(--color-skyblue);
 }
 

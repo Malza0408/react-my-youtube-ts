@@ -7,7 +7,7 @@ const httpClient: AxiosInstance = axios.create({
   params: { key: process.env.REACT_APP_YOUTUBE_API_KEY },
 });
 
-export const MAX_RESULT = 5;
+export const MAX_RESULT = 24;
 
 export default class YoutubeService {
   public static async mostPopular(maxResults: number): Promise<DataType[]> {

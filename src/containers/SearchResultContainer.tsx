@@ -1,7 +1,6 @@
 import React, { useCallback } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import SearchResult from "../components/SearchResult";
-import history from "../history";
 import { get } from "../redux/modules/selectVideo";
 import { DataType, RootState } from "../types";
 
