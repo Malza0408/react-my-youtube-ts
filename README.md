@@ -1,7 +1,7 @@
 # Youtube Clone Coding
 
-제 클론코딩 사이트에 방문 해 주셔서 감사합니다🙌
-이동하기😎
+제 클론코딩 사이트에 방문 해 주셔서 감사합니다🙌  
+이동하기😎  
 주소는? 👉 https://malza0408.github.io/react-my-youtube-ts/
 
 - 해당 프로젝트는 CRA를 기반으로 한 프로젝트입니다.
