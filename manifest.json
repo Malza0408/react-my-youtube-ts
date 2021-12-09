@@ -22,6 +22,7 @@
     }
   ],
   "start_url": "https://malza0408.github.io/react-my-youtube-ts/",
+  "scope": "https://malza0408.github.io/react-my-youtube-ts/",
   "display": "standalone",
   "theme_color": "#000000",
   "background_color": "#ffffff",
