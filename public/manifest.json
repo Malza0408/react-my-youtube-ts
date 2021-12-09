@@ -6,19 +6,19 @@
       "src": "maskable_icon_x128.png",
       "type": "image/png",
       "sizes": "128x128",
-      "purpose": "maskable any"
+      "purpose": "any"
     },
     {
       "src": "maskable_icon_x192.png",
       "type": "image/png",
       "sizes": "192x192",
-      "purpose": "maskable any"
+      "purpose": "any"
     },
     {
       "src": "maskable_icon_x512.png",
       "type": "image/png",
       "sizes": "512x512",
-      "purpose": "maskable any"
+      "purpose": "any"
     }
   ],
   "start_url": "https://malza0408.github.io/react-my-youtube-ts/",
