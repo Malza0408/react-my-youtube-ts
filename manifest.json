@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Malza's Youtube",
+  "name": "Malza's Youtube",
   "icons": [
     {
       "src": "maskable_icon_x192.png",
@@ -13,8 +13,9 @@
       "sizes": "512x512"
     }
   ],
-  "start_url": ".",
+  "start_url": "https://malza0408.github.io/react-my-youtube-ts/",
   "display": "standalone",
   "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "background_color": "#ffffff",
+  "description": "PWA Youtube"
 }
