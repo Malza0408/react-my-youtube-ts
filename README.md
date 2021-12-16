@@ -4,6 +4,7 @@
 이동하기😎  
 주소는? 👉 https://malza0408.github.io/react-my-youtube-ts/
 
+- 이전의 CRA JS 기반 프로젝트를 TS 기반으로 바꿔보고자 CRA TS Template 으로 개발했습니다.
 - 해당 프로젝트는 CRA를 기반으로 한 프로젝트입니다.
 - Redux(Redux Actions, Redux Saga)
 - TypeScript 로 개발 되었습니다.
